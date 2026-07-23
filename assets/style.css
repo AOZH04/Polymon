@@ -483,7 +483,9 @@ main { margin-top: -75px; }
 .works_track {
     display: flex;
     align-items: center;
-    padding: 26px 0;
+    /* Боковой padding = полупросвет — чтобы первый и последний слайд вставали по центру.
+       padding (в отличие от flex-распорок) корректно попадает в область скролла в Safari. */
+    padding: 26px calc((100% - clamp(280px, 62vw, 600px)) / 2);
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -491,12 +493,6 @@ main { margin-top: -75px; }
     scrollbar-width: none;
 }
 .works_track::-webkit-scrollbar { display: none; }
-/* Боковые распорки — чтобы первый и последний слайд вставали по центру */
-.works_track::before,
-.works_track::after {
-    content: "";
-    flex: 0 0 calc((100% - clamp(280px, 62vw, 600px)) / 2);
-}
 .work_slide {
     position: relative;
     flex: 0 0 auto;
@@ -808,9 +804,8 @@ main { margin-top: -75px; }
     .section_head_row > * + * { margin-left: 0; margin-top: 14px; }
     .section_head_row .works_controls { display: none; }
     .works_controls_bottom { display: flex; }
-    .work_slide { width: 86vw; }
-    .works_track::before,
-    .works_track::after { flex-basis: calc((100% - 86vw) / 2); }
+    .work_slide { width: 86vw; margin: 0 5px; }
+    .works_track { padding-left: calc((100% - 86vw) / 2); padding-right: calc((100% - 86vw) / 2); }
     .works_viewport { margin-top: 30px; }
     .catalog_grid { gap: 10px; }
     .cat_card { border-radius: 14px; }
