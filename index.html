@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПолиМон — онлайн-типография в Екатеринбурге</title>
+    <meta name="description" content="Печать полиграфии онлайн: визитки, листовки, буклеты, баннеры, пластиковые карты. Рассчитайте стоимость и оформите заказ. Доставка по России.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+
+<header class="site_header">
+    <div class="site_header_inner">
+        <a href="#" class="site_logo" aria-label="ПолиМон — на главную">
+            <img src="img/logo.png" alt="ПолиМон" class="site_logo_img">
+        </a>
+
+        <nav class="site_nav" id="site_nav" aria-label="Главное меню">
+            <ul class="site_nav_list">
+                <li><a href="#catalog" class="site_nav_link">Продукция</a></li>
+                <li><a href="#works" class="site_nav_link">Работы</a></li>
+                <li><a href="#about" class="site_nav_link">О нас</a></li>
+                <li><a href="#contact" class="site_nav_link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="site_header_side">
+            <a href="tel:+79089015031" class="site_phone">
+                <span class="site_phone_value">8 908 901 50 31</span>
+            </a>
+            <a href="#catalog" class="btn btn_primary site_header_cta">Каталог</a>
+            <a href="#" class="site_cart" aria-label="Корзина">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="20" r="1.3"></circle>
+                    <circle cx="18" cy="20" r="1.3"></circle>
+                    <path d="M2.5 3h2.3l2.2 11.1a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.2L21 6.5H6.1"></path>
+                </svg>
+                <span class="site_cart_count">0</span>
+            </a>
+            <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site_nav">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+            </button>
+        </div>
+        
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="img/offsetprinting.png" alt="Офсетная печать CMYK в типографии ПолиМон" class="hero_bg">
+        <div class="hero_inner">
+            <div class="hero_content">
+                <span class="eyebrow eyebrow_light ff_mono">Типография · Екатеринбург · с 2007</span>
+                <h1 class="hero_title">Печатаем вашу полиграфию онлайн</h1>
+                <p class="hero_lede">Выберите продукт, рассчитайте стоимость и оформите заказ — не выходя из дома. Напечатаем и доставим в любой город России.</p>
+
+                <div class="hero_actions">
+                    <a href="#catalog" class="btn btn_primary btn_lg">Перейти в каталог</a>
+                    <a href="#contact" class="btn btn_ghost btn_lg">Рассчитать заказ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section class="section catalog" id="catalog">
+        <div class="catalog_inner">
+            <div class="section_head section_head_row">
+                <div>
+                    <span class="eyebrow ff_mono">Каталог</span>
+                    <h2 class="section_title">Что мы печатаем</h2>
+                </div>
+                <p class="section_lede">500+ наименований продукции — от визиток до широкоформатных баннеров.</p>
+            </div>
+
+            <div class="catalog_grid">
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/vizitki.webp" alt="Визитки"></span>
+                    <span class="cat_card_name">Визитки</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/plastikovye-karty.webp" alt="Пластиковые карты"></span>
+                    <span class="cat_card_name">Пластиковые карты</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/listovki.webp" alt="Листовки"></span>
+                    <span class="cat_card_name">Листовки</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/buklety.webp" alt="Буклеты А4"></span>
+                    <span class="cat_card_name">Буклеты А4</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/sertifikaty.jpg" alt="Сертификаты"></span>
+                    <span class="cat_card_name">Сертификаты</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/diplomy-gramoty.webp" alt="Дипломы и грамоты"></span>
+                    <span class="cat_card_name">Дипломы, грамоты</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/bloknoty.webp" alt="Блокноты на пружине"></span>
+                    <span class="cat_card_name">Блокноты</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/plakaty.webp" alt="Плакаты и постеры"></span>
+                    <span class="cat_card_name">Плакаты и постеры</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/kartiny.jpg" alt="Картины на холсте"></span>
+                    <span class="cat_card_name">Картины на холсте</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/bannery.webp" alt="Баннеры"></span>
+                    <span class="cat_card_name">Баннеры</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/nakleyki.webp" alt="Наклейки"></span>
+                    <span class="cat_card_name">Наклейки</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/tablichki.webp" alt="Таблички"></span>
+                    <span class="cat_card_name">Таблички</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/mobilnye-konstrukcii.webp" alt="Мобильные конструкции"></span>
+                    <span class="cat_card_name">Мобильные конструкции</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/pechat.png" alt="Печать на обычной бумаге"></span>
+                    <span class="cat_card_name">Печать на бумаге</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/suveniry.webp" alt="Сувенирная продукция"></span>
+                    <span class="cat_card_name">Сувениры</span>
+                </a>
+                <a href="#" class="cat_card">
+                    <span class="cat_card_media"><img src="img/old/pro.webp" alt="Для продвинутых пользователей"></span>
+                    <span class="cat_card_name">Для продвинутых</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРИМЕРЫ РАБОТ -->
+    <section class="section works" id="works">
+        <div class="works_inner">
+            <div class="section_head section_head_row">
+                <div>
+                    <span class="eyebrow ff_mono">Примеры работ</span>
+                    <h2 class="section_title">Печать, которую приятно держать в руках</h2>
+                </div>
+                <div class="works_controls">
+                    <button class="works_arrow" type="button" data-dir="-1" aria-label="Предыдущий слайд">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+                    </button>
+                    <button class="works_arrow" type="button" data-dir="1" aria-label="Следующий слайд">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="works_viewport">
+            <div class="works_track">
+                <figure class="work_slide">
+                    <img src="img/business_cards_mockup.png" alt="Печать визиток">
+                    <figcaption class="work_cap"><span class="ff_mono">01</span> Визитки</figcaption>
+                </figure>
+                <figure class="work_slide">
+                    <img src="img/printed_brochure_mockup.png" alt="Печать буклетов">
+                    <figcaption class="work_cap"><span class="ff_mono">02</span> Буклеты</figcaption>
+                </figure>
+                <figure class="work_slide">
+                    <img src="img/printed_flyers_stack.png" alt="Печать листовок">
+                    <figcaption class="work_cap"><span class="ff_mono">03</span> Листовки</figcaption>
+                </figure>
+                <figure class="work_slide">
+                    <img src="img/plastic_loyalty_cards_stack.png" alt="Печать пластиковых карт">
+                    <figcaption class="work_cap"><span class="ff_mono">04</span> Пластиковые карты</figcaption>
+                </figure>
+                <figure class="work_slide">
+                    <img src="img/canvas_print_on_wall.png" alt="Печать картин на холсте">
+                    <figcaption class="work_cap"><span class="ff_mono">05</span> Картины на холсте</figcaption>
+                </figure>
+                <figure class="work_slide">
+                    <img src="img/roll_up_banner_stand.png" alt="Печать ролл-апов">
+                    <figcaption class="work_cap"><span class="ff_mono">06</span> Мобильные конструкции</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="works_controls works_controls_bottom">
+            <button class="works_arrow" type="button" data-dir="-1" aria-label="Предыдущий слайд">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="works_arrow" type="button" data-dir="1" aria-label="Следующий слайд">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section advantages">
+        <div class="advantages_inner">
+            <div class="section_head">
+                <span class="eyebrow ff_mono">Почему онлайн</span>
+                <h2 class="section_title">Типография, которая работает, пока вы отдыхаете</h2>
+            </div>
+
+            <div class="advantages_grid">
+                <article class="feature_card">
+                    <span class="feature_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    </span>
+                    <h3 class="feature_title">Заказ 24/7</h3>
+                    <p class="feature_text">Оформляйте в любое удобное время — сайт принимает заказы круглосуточно.</p>
+                </article>
+
+                <article class="feature_card">
+                    <span class="feature_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M5 20h14"/></svg>
+                    </span>
+                    <h3 class="feature_title">Нет макета?</h3>
+                    <p class="feature_text">Соберём дизайн в онлайн-конструкторе или поможем с вёрсткой под печать.</p>
+                </article>
+
+                <article class="feature_card">
+                    <span class="feature_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h11v6H2z"/><path d="M13 8h4l3 4v6h-7z"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg>
+                    </span>
+                    <h3 class="feature_title">Доставка по России</h3>
+                    <p class="feature_text">СДЭК и DPD — до пункта выдачи или курьером до двери в вашем городе.</p>
+                </article>
+
+                <article class="feature_card">
+                    <span class="feature_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                    </span>
+                    <h3 class="feature_title">Оплата онлайн</h3>
+                    <p class="feature_text">Картой в пару кликов или по счёту для юрлиц — с НДС и без.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАК ЭТО РАБОТАЕТ -->
+    <section class="section steps" id="how">
+        <div class="steps_inner">
+            <div class="section_head">
+                <span class="eyebrow ff_mono">Как это работает</span>
+                <h2 class="section_title">Три шага от идеи до тиража</h2>
+            </div>
+
+            <ol class="steps_grid">
+                <li class="step_card">
+                    <span class="step_index ff_mono">01</span>
+                    <h3 class="step_title">Рассчитайте</h3>
+                    <p class="step_text">Выберите продукт и параметры — калькулятор сразу покажет цену за нужный тираж.</p>
+                </li>
+                <li class="step_card">
+                    <span class="step_index ff_mono">02</span>
+                    <h3 class="step_title">Оформите заказ</h3>
+                    <p class="step_text">Укажите контакты и детали — менеджер свяжется, чтобы подтвердить заказ и сроки.</p>
+                </li>
+                <li class="step_card">
+                    <span class="step_index ff_mono">03</span>
+                    <h3 class="step_title">Оплатите и получите</h3>
+                    <p class="step_text">Оплатите онлайн или по счёту. Мы напечатаем заказ и доставим точно в срок.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- О КОМПАНИИ + ЦИФРЫ -->
+    <section class="section about" id="about">
+        <div class="about_inner">
+            <div class="about_media">
+                <img src="img/large_format_printer_workshop.png" alt="Производство ПолиМон — широкоформатная печать">
+            </div>
+            <div class="about_body">
+                <span class="eyebrow ff_mono">О типографии</span>
+                <h2 class="section_title">ПолиМон печатает по всей России с 2007 года</h2>
+                <p class="about_text">Мы — рекламно-производственная типография из Екатеринбурга. Цифровая, офсетная и широкоформатная печать, послепечатная обработка и доставка — всё в одном месте. Онлайн-заказ убирает лишние шаги: вы платите за печать, а не за визиты в офис.</p>
+
+                <dl class="imprint">
+                    <div class="imprint_row">
+                        <dt class="imprint_num">19</dt>
+                        <dd class="imprint_label ff_mono">лет на рынке</dd>
+                    </div>
+                    <div class="imprint_row">
+                        <dt class="imprint_num">1000<span class="imprint_plus">+</span></dt>
+                        <dd class="imprint_label ff_mono">клиентов</dd>
+                    </div>
+                    <div class="imprint_row">
+                        <dt class="imprint_num">500<span class="imprint_plus">+</span></dt>
+                        <dd class="imprint_label ff_mono">наименований</dd>
+                    </div>
+                    <div class="imprint_row">
+                        <dt class="imprint_num">100<span class="imprint_thin">тыс.</span><span class="imprint_plus">+</span></dt>
+                        <dd class="imprint_label ff_mono">заказов</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАЯВКИ -->
+    <section class="section lead" id="contact">
+        <div class="lead_inner">
+            <div class="lead_content">
+                <span class="eyebrow ff_mono">Связаться</span>
+                <h2 class="section_title">Не нашли нужное или хотите просчёт?</h2>
+                <p class="lead_text">Позвоните или напишите — менеджер посчитает стоимость тиража и ответит в рабочее время: Пн–Пт 10:00–19:00, Сб 11:00–17:00.</p>
+                <a href="tel:+79089015031" class="lead_phone">8 908 901 50 31</a>
+                <a href="https://t.me/+79089015031" class="lead_tg ff_mono" target="_blank" rel="noopener">или напишите в Telegram →</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site_footer">
+    <div class="site_footer_inner">
+        <div class="footer_col footer_col_brand">
+            <img src="img/logo.png" alt="ПолиМон" class="footer_logo">
+            <p class="footer_about">Онлайн-типография полного цикла. Печатаем и доставляем полиграфию по всей России с 2007 года.</p>
+            <a href="https://t.me/+79089015031" class="footer_tg ff_mono" target="_blank" rel="noopener">Telegram →</a>
+        </div>
+
+        <nav class="footer_col" aria-label="Продукция">
+            <h3 class="footer_title ff_mono">Продукция</h3>
+            <ul class="footer_list">
+                <li><a href="#" class="footer_link">Визитки</a></li>
+                <li><a href="#" class="footer_link">Листовки и буклеты</a></li>
+                <li><a href="#" class="footer_link">Пластиковые карты</a></li>
+                <li><a href="#" class="footer_link">Баннеры и наклейки</a></li>
+                <li><a href="#" class="footer_link">Мобильные конструкции</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer_col" aria-label="Информация">
+            <h3 class="footer_title ff_mono">Информация</h3>
+            <ul class="footer_list">
+                <li><a href="#about" class="footer_link">О компании</a></li>
+                <li><a href="#" class="footer_link">Инструкции и шаблоны</a></li>
+                <li><a href="#contact" class="footer_link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer_col footer_col_contacts">
+            <h3 class="footer_title ff_mono">Контакты</h3>
+            <a href="tel:+79089015031" class="footer_contact footer_contact_phone">8 908 901 50 31</a>
+            <a href="mailto:manager@polymon.ru" class="footer_contact">manager@polymon.ru</a>
+            <p class="footer_contact footer_addr">620012, Екатеринбург,<br>ул. Уральских рабочих, 41</p>
+            <p class="footer_contact footer_hours ff_mono">Пн–Пт 10–19 · Сб 11–17</p>
+        </div>
+    </div>
+
+    <div class="site_footer_bottom">
+        <div class="site_footer_bottom_inner">
+            <p class="footer_copy">© ПолиМон, 2007–2026 · ООО «ПолиМон-Урал»</p>
+            <a href="#" class="footer_link footer_privacy">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/main.js?v=4" defer></script>
+</body>
+</html>
